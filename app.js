@@ -12,7 +12,7 @@ app.use(express.urlencoded());
 // Router
 app.use("/todos", todosRouter);
 
-// app.use("/", todosError);
+app.use("/", todosError);
 
 const port = 5000;
 app.listen(port, () => {
